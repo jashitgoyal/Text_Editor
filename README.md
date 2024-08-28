@@ -12,6 +12,11 @@ However,In Raw Mode the data is send directly to the program ,which provides mor
 
 So now we change it to RAW MODE.
 
+<!-- Step 3 -->
+
+Previously we just entered into Raw Mode of the terminal but this time we ,turned of many default flags of the terminal ,the reason behind turning off so many default functionality is so that we can customize things better,
+Another thing that we are adding is a read time i.e. if user don't write anything for tooo long it quits by its own
+
 Reference
 
 1. https://viewsourcecode.org/snaptoken/kilo/index.html ->Its a Full Comprehensive Guide Towards making your own text editor in C
