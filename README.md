@@ -17,6 +17,10 @@ So now we change it to RAW MODE.
 Previously we just entered into Raw Mode of the terminal but this time we ,turned of many default flags of the terminal ,the reason behind turning off so many default functionality is so that we can customize things better,
 Another thing that we are adding is a read time i.e. if user don't write anything for tooo long it quits by its own
 
+<!-- Step  4-->
+
+Now that we have closed so many default funcitons like Ctrl c ,ctrl z etc,we can customize them.
+
 Reference
 
 1. https://viewsourcecode.org/snaptoken/kilo/index.html ->Its a Full Comprehensive Guide Towards making your own text editor in C
