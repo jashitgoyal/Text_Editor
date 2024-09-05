@@ -1,26 +1,55 @@
-//This is a text editor inspired by the popular vi editor
+Here’s a refined and well-formatted README.md for your text editor project, presenting everything cohesively:
 
-<!-- STEP 1 -->
+Text Editor - Inspired by Kilo
+Author: Jashit Goyal
+This project is a lightweight text editor built in C, inspired by the minimalistic kilo editor. It operates within the terminal using raw mode, offering a simple interface with core editing features such as reading, writing, and navigating text files. It also supports more advanced features like syntax highlighting and scrolling. The goal of the project was to create a fully functional, customizable text editor that mimics the behavior of popular terminal editors like vi and nano.
 
-The Step one was to be able to handle the keypress from the user
+Features
+Raw Mode Operation: The editor operates in terminal raw mode, allowing direct control of keypresses and output.
+File Handling: Reads and displays existing files while allowing editing within the terminal window.
+Cursor Movements: Supports precise navigation using arrow keys, moving horizontally and vertically across the text.
+Scrolling: Handles both vertical and horizontal scrolling, allowing users to navigate through larger files efficiently.
+Status Bar: Displays information about the file, such as filename, current line, and character position.
+Syntax Highlighting: Implements basic syntax highlighting for programming languages, making code more readable.
+Backup Functionality: Contains a mechanism for dynamically adjusting the number of visual UI elements like pipes, enhancing the overall display and interaction.
 
-<!-- STEP 2 -->
+Keybindings
+Arrow Keys: Move the cursor up, down, left, or right.
+Ctrl+Q: Quit the editor.
+Ctrl+S: Save the current file.
+Ctrl+F: Search functionality (coming soon).
 
-Now its time to make changes to the terminal,the reason is our terminal by default operates in the Canonical Mode,or Cooked Mode.Basically,whenever user type something the text or data is first processed by the terminal i.e understanding special key press like Ctrl+D etc,
-
-However,In Raw Mode the data is send directly to the program ,which provides more customization for programs like games and text editors.
-
-So now we change it to RAW MODE.
-
-<!-- Step 3 -->
-
-Previously we just entered into Raw Mode of the terminal but this time we ,turned of many default flags of the terminal ,the reason behind turning off so many default functionality is so that we can customize things better,
-Another thing that we are adding is a read time i.e. if user don't write anything for tooo long it quits by its own
-
-<!-- Step  4-->
-
-Now that we have closed so many default funcitons like Ctrl c ,ctrl z etc,we can customize them.
-
-Reference
-
-1. https://viewsourcecode.org/snaptoken/kilo/index.html ->Its a Full Comprehensive Guide Towards making your own text editor in C
+Development Timeline
+Sep 5, 2024
+Syntax Highlighting: Completed the syntax highlighting feature, allowing for color-coded keywords, strings, and comments based on file type.
+Working on Syntax Highlighting: Added preliminary support for syntax highlighting and began detecting programming file types.
+Sep 4, 2024
+Text Viewing and Status Bar: Added features for reading files and displaying a status bar, which shows information such as file name, cursor position, and the current line number.
+Scrolling Enhancements: Improved the editor’s scrolling behavior to handle both vertical and horizontal scrolling smoothly.
+Horizontal and Vertical Scrolling: Implemented scrolling, enabling navigation through files larger than the terminal window.
+File Reading: Added the ability to read existing files and display their contents, adjusting to the current terminal size.
+Character Line Reading: Integrated functionality for reading character lines from the user input and rendering them row by row on the screen.
+Sep 2, 2024
+Cursor Movements: Added support for cursor movements using arrow keys, allowing navigation across the text.
+Initial UI Work: Began working on the interface, setting up the display and basic navigation logic.
+Backup Function for Pipes: Introduced a backup feature to manage and customize the display of pipes (UI elements), enhancing the visual representation of the text.
+Aug 31, 2024
+Dynamic Pipe Display: Customized the number of pipes displayed based on the terminal’s size, improving visual clarity and overall layout.
+Aug 28, 2024
+Building an Editor: Added features that made the program resemble a functioning text editor, with the ability to edit files and move the cursor.
+Terminal in Raw Mode: Transitioned the terminal into raw mode, allowing the program to capture keypresses without the terminal’s default behavior, and turned off various terminal flags to customize input handling.
+Aug 27, 2024
+Raw Mode & Custom Flags: Switched the terminal into raw mode and disabled many default terminal functionalities, providing greater control over input and output.
+Aug 22, 2024
+README Update: Updated the documentation to reflect new features and improvements.
+Initial Raw Mode Testing: Successfully implemented a mechanism to toggle the terminal between raw mode and normal mode, with proper exit functionality.
+Aug 22, 2024
+Keypress Reading: Added the ability to read keypresses from the user in raw mode and implemented a simple quit command (Ctrl+Q).
+Basic Setup: Created the basic structure and foundational files for the project.
+Initial Commit: Began the project and established the initial version control setup.
+Planned Features
+Search Functionality: Implementing a search feature to allow users to find specific text in a file.
+Undo/Redo: Adding functionality for undoing and redoing actions within the editor.
+Extended Syntax Highlighting: Expanding syntax highlighting to support a wider variety of programming languages and file types.
+References
+This project was heavily inspired by the Kilo Editor Guide, which provided detailed steps on building a terminal-based text editor.
