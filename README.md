@@ -28,12 +28,9 @@ Development Timeline
 - > Sep 4, 2024
   > Text Viewing and Status Bar: Added features for reading files and displaying a status bar, which shows information such as file name, cursor position, and the current line number.
   > Scrolling Enhancements: Improved the editor’s scrolling behavior to handle both vertical and horizontal scrolling smoothly.
-
-Horizontal and Vertical Scrolling: Implemented scrolling, enabling navigation through files larger than the terminal window.
-
-File Reading: Added the ability to read existing files and display their contents, adjusting to the current terminal size.
-
-Character Line Reading: Integrated functionality for reading character lines from the user input and rendering them row by row on the screen.
+  > Horizontal and Vertical Scrolling: Implemented scrolling, enabling navigation through files larger than the terminal window.
+  > File Reading: Added the ability to read existing files and display their contents, adjusting to the current terminal size.
+  > Character Line Reading: Integrated functionality for reading character lines from the user input and rendering them row by row on the screen.
 
 - > Sep 2, 2024
   > Cursor Movements: Added support for cursor movements using arrow keys, allowing navigation across the text.
