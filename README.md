@@ -58,9 +58,9 @@ Development Timeline
 
 Planned Features
 
-1.Search Functionality: Implementing a search feature to allow users to find specific text in a file.
-2.Undo/Redo: Adding functionality for undoing and redoing actions within the editor.
-3.Extended Syntax Highlighting: Expanding syntax highlighting to support a wider variety of programming languages and file types.
+1. Search Functionality: Implementing a search feature to allow users to find specific text in a file.
+2. Undo/Redo: Adding functionality for undoing and redoing actions within the editor.
+3. Extended Syntax Highlighting: Expanding syntax highlighting to support a wider variety of programming languages and file types.
 
 References
 
