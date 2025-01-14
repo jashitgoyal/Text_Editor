@@ -1,11 +1,9 @@
 {
   "name": "C Development Environment",
-  "image": "mcr.microsoft.com/vscode/devcontainers/cpp:latest", // Use the C/C++ dev container image
-  "features": {
-    "ghcr.io/devcontainers/features/cmake:1": {}
-  },
-  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y build-essential",
-  "runArgs": ["--init", "true"],
-  "extensions": ["ms-vscode.cpptools", "ms-vscode.cmake-tools"],
-  "mounts": ["source=${localWorkspaceFolder},target=/workspace,type=bind"]
+  "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-20.04",
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y build-essential cmake git",
+  "extensions": [
+    "ms-vscode.cpptools",
+    "ms-vscode.cmake-tools"
+  ]
 }
